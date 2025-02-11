@@ -1,0 +1,103 @@
+:root {
+--Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--Light-Grayish-Blue);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    background-image: url(/Projects/Article-Preview/images/drawers.jpg);
+    width: 21rem;
+    height: 22rem;
+    background-size: cover;
+    border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+.content {
+    background-color: #fff;
+    border-top-right-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    width: 32rem;
+    height: 22rem;
+    padding: 2.3rem;
+}
+
+h2 {
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.name {
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 900;
+}
+
+small {
+    color: var(--Desaturated-Dark-Blue);
+    font-weight: 700;
+}
+
+.avatar {
+    background-image: url(/Projects/Article-Preview/images/avatar-michelle.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    height: 3.7rem;
+    width: 3.7rem;
+}
+
+.avatar-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.info p {
+    line-height: 0.7rem;
+}
+
+.info p+p {
+    color: var(--Grayish-Blue);
+}
+
+.share-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.share-icon:hover {
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
